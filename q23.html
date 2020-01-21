@@ -1,0 +1,137 @@
+<!doctype>
+<html>
+<head>
+<style>
+.image
+{
+	background :inherit;
+	background-image:url(cab.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+	heignt=100%;
+	background-position:center;
+	-webkit-filter:blur(5px);
+	-moz-filter:blur(50px);
+	-o-filter:blur(50px);
+	-ms-filter:blur(50px);
+
+	transition :all 2s linear;
+	-moz-transition :all 2s linear;
+	-webkit-transition :all 2s linear;
+	-o-transition :all 2s linear;
+}
+
+.form
+{
+	position: inherit;
+	position: absolute;
+	left: 400px;
+	top: 50px;
+	margin=5% auto;
+	-webkit-transform :translate (-50%,-50%);
+	-moz-transform: translate (-50%,-50%);
+	-o-transform :translate (-50%,-50%);
+	-ms-transform :translate (-50%,-50%);
+	transform:translate (-50%,-50%);
+	width:500px;
+	height:550px;
+	padding: 40px 40px;
+	background:rgba(0,0,0,0.6);
+}
+
+ input[type="submit"]
+{	
+	
+	margin-bottom: 28px;
+	padding: 4px;
+	width:120px;
+	height: 32px;
+	background:red;
+	border: none;
+	border-radious: 2px ;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size:15px;
+	text-transform: uppercase;
+	transition: 0.2s ease;
+	cursor: pointer;
+	color: white;
+	align:" center";	
+}
+   input[type="submit"]:hover,
+   input[type="submit"]:focus
+{
+	background: grey;
+	transition: 0.2s ease;
+}
+ 
+
+ input[type="text"],
+ input[type="date"],
+ input[type="time"]
+	
+{
+	width:100%;
+	margin-bottom: 20px;
+
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 4px;
+	width:220px;
+	height: 32px;
+	border: ;
+	outline: ;
+	border-bottom: 1px solid #aaa;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size:15px;
+	transition: 0.2s ease;
+	background: black;
+	color: white;	
+}
+.head
+{
+	color:#fff;
+	font-size:30px;
+	text-align:center;
+	border-top-left-radious:10px;
+	border-top-right-radious:10px;
+	background:red;
+	padding: 15px 0;
+}
+.a
+{
+	align:center;
+}
+
+</style>
+</head>
+<body class="image" >
+
+<div class="form">
+
+<form>
+	<div class="head">BOOK CAB NOW</div>
+	<p ><font color=" white";>Name:
+	 <input type="text" name="name" placeholder="Your Name" ></p> 
+	<p ><font color=" white";>Phone Number:	
+	 <input type="text" name="number" placeholder="Your Phone Number"></p>
+	<p ><font color=" white";>Picup Location: 
+	 <input type="text" name="location" placeholder="Enter an origin location"></p>
+	<p ><font color=" white";>Drop Location:
+	 <input type="text" name="destination" placeholder="Enter a destination location"></p>
+	<p ><font color=" white";>Pickup Date:
+	 <input type="date" name="date" placeholder="mm/dd/yy"></p>
+	<p ><font color=" white";>Pickup Time:
+	 <input type="time" placeholder="Hrs:Min"/></p><br>
+	<div class="a">
+	<input type="submit" value="Book MY Cab" /><br>
+</p></div>
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>
